@@ -1,0 +1,51 @@
+header
+  background: rgba(black, 0.5)
+#header_inner
+  max-width: $site-width
+  margin: 0 auto
+  padding: 10px 20px
+h1
+  color: white
+  font-weight: lighter
+  margin: 0
+
+#page_wrapper
+  max-width: $site-width
+  height: 1000px
+  margin: 0 auto
+  padding: 50px
+  font-size: 0
+
+.link_column
+  border: 1px solid black
+  display: inline-block
+  width: 23%
+  font-size: 1rem
+  vertical-align: top
+  + .link_column
+    margin-left: 20px
+
+.link_wrapper
+  + .link_wrapper
+    margin-top: 20px
+
+.column_top_bar
+  background: rgba(gold, 0.7)
+  padding: 10px 20px
+  h4
+    margin: 0
+    color: white
+    font-weight: lighter
+  + .column_top_bar
+    margin-top: 20px
+
+.link1
+  padding: 10px 20px
+  background: #212223
+  a
+    color: white
+.link2
+  padding: 10px 20px
+  background: #707070
+  a
+    color: white
