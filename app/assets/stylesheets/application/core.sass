@@ -1,27 +1,44 @@
 *
   box-sizing: border-box
 body
-  font-family: $font, Sans-Serif
+  font-family: Verdana, Sans-Serif
   font-size: 87.5%
   -webkit-font-smoothing: antialiased
   margin: 0
 a
-  color: $primary_color
+  color: $primary_text_color
   text-decoration: none
   a:hover
     text-decoration: underline
 img
   max-width: 100%
+
 h1, h2, h3, h4, h5, h6, p, li
   color: $primary_text_color
-p
+  font-family: Georgia
+  font-weight: normal
+  margin: 0
+
+p, a
+  font-family: Verdana
+  font-size: 1rem
   line-height: 1.5rem
+
+h1
+  font-size: 3rem
+
+h2
+  font-size: 2rem
+
+h3
+  font-size: 1.75rem
+
 .hidden
   display: none
 
 /* site wide */
 body
-  background: #d5edd8
+  background: #ddeaff
 
 #page_wrapper
   height: 100%
@@ -30,6 +47,29 @@ body
 
 #page_box
   background: white
+  height: 1000px
   margin: 0 auto
   max-width: $site-width
   padding: 50px
+  position: relative
+
+#main_content
+  display: flex
+  justify-content: space-between
+  padding: 30px
+
+#big_column
+  display: inline-block
+  max-width: 70%
+
+#small_column
+  display: inline-block
+  max-width: 30%
+  padding: 0 20px
+  text-align: center
+  vertical-align: top
+
+.link_box
+  padding: 5px 5px
+  + .link_box
+    border-top: 1px solid $primary_text_color
